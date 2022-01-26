@@ -9,16 +9,16 @@
 <body>
     <header>
         <nav>
-            <img src="" alt="Логотип города Седона">
+            <a href="index.html"><img src="" alt="Логотип города Седона"></a>
             <ul>
                 <li>
-                    <a href="#">Главная</a>
+                    <a href="index.html">Главная</a>
                 </li>
                 <li>
                     <a href="#">О нас</a>
                 </li>
                 <li>
-                    <a href="catalog.html">Гостиницы</a>
+                    <a>Гостиницы</a>
                 </li>
             </ul>
             <ul>
@@ -98,9 +98,16 @@
                     </ul>
                 </fieldset>
                 <fieldset>
-                    <legend>Стоимость, ₽:</legend>
+                    <legend>Стоимость, <span>₽</span></legend>
+                    <label>
+                        <input type="text" value="0">
+                        от
+                    </label>
+                    <label>
+                        <input type="text" value="9000">
+                        до
+                    </label>
                 </fieldset>
-
                 <button type="submit">Применить</button>
                 <button type="reset">Сбросить</button>
             </form>
@@ -108,15 +115,11 @@
         <section>
             <h2 class="visually-hidden">Сортировка</h2>
             <p>Найдено гостиниц: 38</p>
-            <form>
-                <label class="visually-hidden" for="sorting">Сортировка</label>
-                <select aria-label="Сортировка">
-                    <option value="cheap">Сначала дешёвое</option>
-                    <option value="expensive">Сначала дорогое</option>
-                    <option value="popular">Сначала популярное</option>
-                </select>
-                <button class="visually-hidden" type="submit">Отсортировать продукты</button>
-            </form>
+            <select aria-label="Сортировка">
+                <option value="cheap">Сначала дешёвое</option>
+                <option value="expensive">Сначала дорогое</option>
+                <option value="popular">Сначала популярное</option>
+            </select>
             <a href="#">
                 <span class="visually-hidden">Показать карточки</span>
             </a>
@@ -227,7 +230,7 @@
                     <p>Рейтинг: 9,2</p>
                 </li>
             </ul>
-            <button type="button">Загрузить ещё</button>
+            <a href="#">Загрузить ещё</a>
         </section>
         <section>
             <h2 class="visually-hidden">Пагинация</h2>
@@ -245,7 +248,7 @@
                     <a href="#">4</a>
                 </li>
                 <li>
-                    <a href="#">...</a>
+                    <a>...</a>
                 </li>
                 <li>
                     <a href="#">10</a>
@@ -273,34 +276,31 @@
                 </button>
             </form>
         </section>
-
     </main>
     <footer>
         <section>
-            <h2>Социальные сети</h2>
+            <h2 class="visually-hidden">Контакты</h2>
             <ul>
                 <li>
                     <a href="https://twitter.com/htmlacademy_ru">
-                        <span class="visually-hidden">Твиттер</span>
+                        <span class="visually-hidden">twitter</span>
                     </a>
                 </li>
                 <li>
                     <a href="https://www.facebook.com/htmlacademy">
-                        <span class="visually-hidden">Фейсбук</span>
+                        <span class="visually-hidden">facebook</span>
                     </a>
                 </li>
                 <li>
                     <a href="https://www.youtube.com/c/HTMLAcademyRUS">
-                        <span class="visually-hidden">Ютуб</span>
+                        <span class="visually-hidden">youtube</span>
                     </a>
                 </li>
             </ul>
-            <a href="tel:+">+7 (812) 812-12-12</a>
+            <a href="tel:+78128121212">+7 (812) 812-12-12</a>
             <a href="https://htmlacademy.ru/"><img src="" alt=".html academy"></a>
         </section>
     </footer>
-    <p>Репозиторий создан для обучения на профессиональном онлайн‑курсе «<a
-            href="https://htmlacademy.ru/intensive/htmlcss">HTML и CSS. Профессиональная вёрстка сайтов</a>».</p>
 </body>
 
 </html>
