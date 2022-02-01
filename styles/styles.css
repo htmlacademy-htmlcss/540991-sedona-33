@@ -21,6 +21,7 @@ body {
   color: #333333;
   background-color: #FFFFFF;
 }
+
 h2 {
   text-transform: uppercase;
 }
@@ -28,7 +29,6 @@ h2 {
 .page-header {
   color: #333333;
   background-color: #FFFFFF;
-;
 }
   
 .navigation-link {
@@ -50,9 +50,11 @@ h2 {
   background-size: 100% auto;
   background-repeat: no-repeat;
 }
+
 .welcome{
   text-align: center;
 }
+
 .advantages-intro{
   color: #000000;
   font-family: "PT Sans", sans-serif;
@@ -72,15 +74,14 @@ h2 {
   text-align: center;
   color: #333333;
 }
+
 .newsletter{
   color: #FFFFFF;
   background-color: #333333;
   background-image: url("/images/index-images/mail-background.jpg");
   background-size: 100% auto;
   background-repeat: no-repeat;  
-  
-  text-align: center;
-  
+  text-align: center;  
 }
 
 .inner-header {
@@ -89,4 +90,33 @@ h2 {
   background-image: url("/images/catalog-images/filters-background.jpg");
   background-size: 100% auto;
   background-repeat: no-repeat;
+}
+
+/* преимущества */
+
+.advantages-title {
+  color: #000000;
+  font-family: "PT Sans", sans-serif;
+  font-style: 700;
+  font-size: 24px;
+  Line-height: 28px; 
+  vertical-align: Top;
+  text-transform: uppercase;
+}
+.advantages-item {
+  text-align: Center;
+}
+.advantages-item span {
+  color: #333333;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+  text-transform: uppercase;
+}
+.advantages-description {
+  color: #333333;  
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
 }
