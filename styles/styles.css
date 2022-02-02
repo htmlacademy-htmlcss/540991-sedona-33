@@ -1,0 +1,219 @@
+@font-face {
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: 400;
+  src: url("fonts/pt-sans-regular.woff2") format("woff2");
+  font-display: swap;
+}
+  
+@font-face {
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: 700;
+  src: url("fonts/pt-sans-bold.woff2") format("woff2");
+  font-display: swap;
+}
+
+body {
+  font-family: "PT Sans", sans-serif;
+  font-size: 18px;
+  line-height: 21px;
+  color: #333333;
+  background-color: #FFFFFF;
+}
+.button {
+  font-family: inherit;
+  font-size: 16px;
+  line-height: 16px;
+  font-weight: 700;
+  text-align: center;
+  color: #ffffff;
+  background-color: #000000;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.page-header {
+  color: #000000;
+  background-color: #FFFFFF;
+}
+  
+.navigation-link {
+  font-family: "PT Sans", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 26px;
+  text-align: center;
+  color: #000000;
+  background-color: #FFFFFF;
+  text-decoration: none;  
+}
+
+.main-index {
+  color: #333333;
+  background-color: #FFFFFF;
+  background-image: url("../images/index-images/index-background.jpg ");  
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+}
+
+/* преимущества */
+
+.advantages-title{
+  color: #000000;
+  font-family: "PT Sans", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 36px;
+  text-align: center;
+  text-transform: uppercase;
+}
+.advantages-look{
+  font-style: normal;
+  font-weight: normal;
+  font-size: 22px;
+  line-height: 36px;
+  text-align: center;
+  color: #333333;
+}
+.advantages-item-title {
+  color: #000000;
+  font-family: "PT Sans", sans-serif;
+  font-style: 700;
+  font-size: 24px;
+  Line-height: 28px; 
+  vertical-align: Top;
+  text-transform: uppercase;
+}
+.advantages-item {
+  text-align: Center;
+}
+.advantages-item span {
+  color: #333333;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+  text-transform: uppercase;
+}
+.advantages-description {
+  color: #333333;  
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+}
+
+/* поиск гомтиницы */
+
+.hotel-search-title{
+  color: #000000;
+  font-family: "PT Sans", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 36px;
+  text-align: center;
+  text-transform: uppercase;
+}
+.hotel-search-description{
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 26px;
+  text-align: center;
+  color: #333333;
+}
+
+/* рассылка */
+
+.newsletter{
+  color: #FFFFFF;
+  background-color: #333333;
+  background-image: url("../images/index-images/mail-background.jpg");
+  background-size: 100% auto;
+  background-repeat: no-repeat;  
+  text-align: center;  
+}
+.newsletter-title{  
+  font-style: normal;
+  font-weight: bold;
+  font-size: 30px;
+  line-height: 36px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #FFFFFF;
+}
+.newsletter-description{
+  font-style: normal;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 26px;
+  text-align: center;
+  color: #FFFFFF;
+}
+
+/* рассылка каталог */
+
+ .newsletter-catalog{    
+    background-color: #FFFFFF;
+    text-align: center; 
+}
+.newsletter-title-catalog{
+  color: #000000;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 30px;
+  line-height: 36px;
+  text-align: center;
+  text-transform: uppercase;
+}
+.newsletter-description-catalog{
+  color: #333333;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 26px;
+  text-align: center;  
+}
+
+/* подвал */
+
+.inner-header {
+  color: #FFFFFF;
+  background-color: #333333;
+  background-image: url("../images/catalog-images/filters-background.jpg");
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+}
+
+.page-footer-phone{
+  font-family: PT Sans;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 40px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #000000;
+  text-decoration: none;
+
+}
+
+/* --------------КАТАЛОГ------------- */
+
+.inner-header-title {
+  color: #FFFFFF;
+  font-weight: 700;
+  font-size: 60px;
+  line-height: 78px;  
+}
+
+/* "хлебные крошки" крошки */
+
+.breadcrumbs {
+  color: #FFFFFF;
+}
+.breadcrumbs-link {
+  color: inherit;
+}
