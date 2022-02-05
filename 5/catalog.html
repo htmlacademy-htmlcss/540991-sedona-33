@@ -37,7 +37,7 @@
                         <span class="visually-hidden">Избранное</span></a>
                 </li>
                 <li class="navigation-item">
-                    <a class="button" href="#">Хочу сюда</a>
+                    <a class="button navigation-button" href="#">Хочу сюда</a>
                 </li>
             </ul>
         </nav>
@@ -118,13 +118,13 @@
                         до
                     </label>
                 </fieldset>
-                <button type="submit">Применить</button>
-                <button type="reset">Сбросить</button>
+                <button class="filter-button" type="submit">Применить</button>
+                <button class="filter-reset" type="reset">Сбросить</button>
             </form>
         </section>
 
         <!-- сортировка ----------------------------------------------------------->
-        <section>
+        <section class="sorting">
             <h2 class="visually-hidden">Сортировка</h2>
             <p>Найдено гостиниц: 38</p>
             <div class="sorting-container">
@@ -136,7 +136,7 @@
                 <a class="button" href="#">
                     <span class="visually-hidden">Показать карточки</span>
                 </a>
-                <a class="button" class="button" href="#">
+                <a class="button" href="#">
                     <span class="visually-hidden">Показать слайд</span>
                 </a>
                 <a class="button" href="#">
@@ -145,7 +145,7 @@
             </div>
         </section>
         <!-- каталог_карточки  --------------------------------------------------->
-        <section>
+        <section class="hotels-catalog">
             <h2 class="visually-hidden">Каталог</h2>
             <ul class="hotels-list">
                 <li class="hotels-card">
@@ -156,7 +156,7 @@
                     </a>
                     <p>Гостиница От 4000 ₽</p>
                     <a class="hotels-card-button-link button" href="">Подробнее</a>
-                    <button class="button" type="button">В избранное</button>
+                    <button class="hotels-card-button button" type="button">В избранное</button>
                     <ul>
                         <li>
                             <img src="" alt="Звезда">
@@ -181,7 +181,7 @@
                     </a>
                     <p>Гостиница От 3000 ₽</p>
                     <a class="hotels-card-button-link button" href="">Подробнее</a>
-                    <button class="button" type="button">В избранное</button>
+                    <button class="hotels-card-button button" type="button">В избранное</button>
                     <ul>
                         <li>
                             <img src="" alt="Звезда">
@@ -206,7 +206,7 @@
                     </a>
                     <p>Гостиница От 2000 ₽</p>
                     <a class="hotels-card-button-link button" href="">Подробнее</a>
-                    <button class="button" type="button">В избранное</button>
+                    <button class="hotels-card-button button" type="button">В избранное</button>
                     <ul>
                         <li>
                             <img src="" alt="Звезда">
@@ -231,7 +231,7 @@
                     </a>
                     <p>Гостиница От 3000 ₽</p>
                     <a class="hotels-card-button-link button" href="">Подробнее</a>
-                    <button class="button" type="button">В избранное</button>
+                    <button class="hotels-card-button button" type="button">В избранное</button>
                     <ul>
                         <li>
                             <img src="" alt="Звезда">
@@ -274,7 +274,6 @@
                     <a class="pagination-link pagination-last" href="#">10</a>
                 </li>
             </ul>
-            <button class="button pagination-show-more" type="button">Загрузить ещё</button>
             <!-- форма-гостиниц на странице -------------------------------------->
             <form class="count-hotels">
                 <label>Гостиниц на странице:</label>
@@ -293,7 +292,7 @@
                 <label for="newsletter-email">Email</label>
                 <input class="field" placeholder="Ваш e-mail" type="email" name="newsletter-email" id="newsletter-email"
                     required>
-                <button type="submit">
+                <button class="newsletter-button" type="submit">
                     <span>Подписаться</span>
                 </button>
             </form>
