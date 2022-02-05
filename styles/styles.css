@@ -32,6 +32,62 @@ body {
   text-decoration: none;
   text-transform: uppercase;
 }
+.navigation-button{
+  background-color: #756257;  
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #FFFFFF;
+}
+.search-button{
+  background-color: #756257;  
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 36px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  text-decoration: none;  
+}
+.newsletter-button{
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 26px;
+  text-align: center;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #FFFFFF;
+  background-color: #83B3D3;  
+}
+.field{
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 26px;
+  color: #000000;
+  opacity: 0.6;
+  background-color: #F2F2F2;  
+}
+.filter-button{
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 21px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  background-color: #83B3D3;
+}
+.filter-reset{
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 23px;
+  text-align: center;
+  color: #FFFFFF;
+  background-color: transparent;
+}
+
 
 .page-header {
   color: #000000;
@@ -179,9 +235,9 @@ body {
 
 /* рассылка каталог---------------------------------- */
 
- .newsletter-catalog{    
-    background-color: #FFFFFF;
-    text-align: center; 
+.newsletter-catalog{    
+  background-color: #FFFFFF;
+  text-align: center; 
 }
 .newsletter-title-catalog{
   color: #000000;
@@ -242,7 +298,7 @@ body {
   color: inherit;
 }
 
-
+/* сортировка */
 
 .catalog-filter-title {
   font-size: 20px;
@@ -251,28 +307,52 @@ body {
   color: #FFFFFF;  
 }
 
+.sorting p{
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 39px;
+  text-transform: uppercase;
+  color: #000000;
+}
 .sorting-container {
   color: #333333;
   background-color: #FFFFFF;
 }
 
+/* карточки */
+
 .hotels-card{
-  background: #FFFFFF;
+  background-color: #FFFFFF;
 }
 .hotels-card-link {
   text-decoration: none;
 }
-
 .hotels-card-title {
-  font-weight: 700; 
-  font-style: normal;
+  font-weight: 700;   
   font-size: 24px;
   line-height: 31px;
   color: #000000;
 }
-
+.hotels-card-button-link {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 21px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  background-color: #756257;
+}
+.hotels-card-button{
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 21px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  background-color: #83B3D3;
+}
 .rating{
-  background: #F2F2F2;
+  background-color: #F2F2F2;
   font-size: 16px;
   line-height: 21px;
   text-align: center;
@@ -284,7 +364,13 @@ body {
 
 .load-more-button{
   color: #FFFFFF;
-  background: #83B3D3;
+  background-color: #83B3D3;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 26px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #FFFFFF;
 }
 
 .count-hotels{
@@ -311,5 +397,14 @@ body {
 .pagination-current {
   color: #000000;
   background-color: #F2F2F2;
+}
+
+/* форма _гостиниц на странице */
+
+.count-hotels {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 23px;
+  color: #333333;
 }
 
