@@ -32,6 +32,62 @@ body {
   text-decoration: none;
   text-transform: uppercase;
 }
+.navigation-button{
+  background-color: #756257;  
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #FFFFFF;
+}
+.search-button{
+  background-color: #756257;  
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 36px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  text-decoration: none;  
+}
+.newsletter-button{
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 26px;
+  text-align: center;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #FFFFFF;
+  background-color: #83B3D3;  
+}
+.field{
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 26px;
+  color: #000000;
+  opacity: 0.6;
+  background-color: #F2F2F2;  
+}
+.filter-button{
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 21px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  background-color: #83B3D3;
+}
+.filter-reset{
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 23px;
+  text-align: center;
+  color: #FFFFFF;
+  background-color: transparent;
+}
+
 
 .page-header {
   color: #000000;
@@ -50,17 +106,16 @@ body {
   text-decoration: none;  
 }
 
-.main-index {
+/* добро пожаловать------------------------------------------------------------------- */
+.welcome-images {
   color: #333333;
-  background-color: #FFFFFF;
+  background-color: #4b6169;
+  text-align: center;
   background-image: url("../images/index-images/index-background.jpg ");  
   background-size: 100% auto;
   background-repeat: no-repeat;
 }
-
-/* преимущества */
-
-.advantages-title{
+.welcome-title{
   color: #000000;
   font-family: "PT Sans", sans-serif;
   font-style: normal;
@@ -70,6 +125,10 @@ body {
   text-align: center;
   text-transform: uppercase;
 }
+
+/* преимущества ---------------------------------------------------------------------*/
+
+
 .advantages-look{
   font-style: normal;
   font-weight: normal;
@@ -104,8 +163,29 @@ body {
   font-size: 18px;
   line-height: 21px;
 }
+/* внутренний список преимуществ, с иконками--------------------- */
 
-/* поиск гомтиницы */
+.advantages-item-icon {
+  text-align: Center;
+}
+.advantages-item-title-icon {
+  color: #000000;
+  font-family: "PT Sans", sans-serif;
+  font-style: 700;
+  font-size: 24px;
+  Line-height: 28px; 
+  vertical-align: Top;
+  text-transform: uppercase;
+}
+.advantages-description-icon {
+  color: #333333;  
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+}
+
+/* поиск гомтиницы----------------------------------------------------------------- */
 
 .hotel-search-title{
   color: #000000;
@@ -125,7 +205,7 @@ body {
   color: #333333;
 }
 
-/* рассылка */
+/* рассылка ---------------------------------------------------------------------*/
 
 .newsletter{
   color: #FFFFFF;
@@ -153,11 +233,11 @@ body {
   color: #FFFFFF;
 }
 
-/* рассылка каталог */
+/* рассылка каталог---------------------------------- */
 
- .newsletter-catalog{    
-    background-color: #FFFFFF;
-    text-align: center; 
+.newsletter-catalog{    
+  background-color: #FFFFFF;
+  text-align: center; 
 }
 .newsletter-title-catalog{
   color: #000000;
@@ -177,15 +257,7 @@ body {
   text-align: center;  
 }
 
-/* подвал */
-
-.inner-header {
-  color: #FFFFFF;
-  background-color: #333333;
-  background-image: url("../images/catalog-images/filters-background.jpg");
-  background-size: 100% auto;
-  background-repeat: no-repeat;
-}
+/* подвал---------------------------------------------------------------------------- */
 
 .page-footer-phone{
   font-family: PT Sans;
@@ -200,8 +272,16 @@ body {
 
 }
 
-/* --------------КАТАЛОГ------------- */
+/* --------------КАТАЛОГ------------------------------------------------------------ */
+  /* ----------------------------------------------------------------------------- */
 
+.catalog-header {
+  color: #FFFFFF;
+  background-color: #333333; /*картинки пока не хватает, поэтому "фонит" из-под неё*/
+  background-image: url("../images/catalog-images/filters-background.jpg");
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+}
 .inner-header-title {
   color: #FFFFFF;
   font-weight: 700;
@@ -217,3 +297,114 @@ body {
 .breadcrumbs-link {
   color: inherit;
 }
+
+/* сортировка */
+
+.catalog-filter-title {
+  font-size: 20px;
+  line-height: 26px;
+  font-weight: 700;
+  color: #FFFFFF;  
+}
+
+.sorting p{
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 39px;
+  text-transform: uppercase;
+  color: #000000;
+}
+.sorting-container {
+  color: #333333;
+  background-color: #FFFFFF;
+}
+
+/* карточки */
+
+.hotels-card{
+  background-color: #FFFFFF;
+}
+.hotels-card-link {
+  text-decoration: none;
+}
+.hotels-card-title {
+  font-weight: 700;   
+  font-size: 24px;
+  line-height: 31px;
+  color: #000000;
+}
+.hotels-card-button-link {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 21px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  background-color: #756257;
+}
+.hotels-card-button{
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 21px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  background-color: #83B3D3;
+}
+.rating{
+  background-color: #F2F2F2;
+  font-size: 16px;
+  line-height: 21px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #333333;
+  font-style: normal;
+  font-weight: 400;
+}
+
+.load-more-button{
+  color: #FFFFFF;
+  background-color: #83B3D3;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 26px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #FFFFFF;
+}
+
+.count-hotels{
+  color: #333333;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 23px;
+  background-color: #FFFFFF;
+}
+
+/* пагинация--------------------------------------------------------------------- */
+.pagination {
+  background-color: #ffffff;
+}
+
+.pagination-link {
+  color: #ffffff;
+  background-color: #83B3D3;
+  text-decoration: none;
+  line-height: 26px;
+  font-weight: 700;
+}
+
+.pagination-current {
+  color: #000000;
+  background-color: #F2F2F2;
+}
+
+/* форма _гостиниц на странице */
+
+.count-hotels {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 23px;
+  color: #333333;
+}
+
