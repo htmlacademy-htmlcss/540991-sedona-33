@@ -19,48 +19,85 @@
         <header class="page-header">
             <!-- навигация -->
             <nav class="navigation">
-            <a href="index.html">
-               <img class="page-header-logo" 
-                    src="images/assets-images/logo-sedona.svg" 
-                    alt="Логотип города Седона" 
-                    width="139"
-                    height="70"></a>
-            <ul class="navigation-list">
-              <li class="navigation-item">
-                <a class="navigation-link"
-                   href="index.html">Главная</a>
-              </li>
-              <li class="navigation-item">
-                <a class="navigation-link" 
-                   href="#">О нас</a>
-              </li>
-              <li class="navigation-item">
-                <a class="navigation-link">Гостиницы</a>
-              </li>
-            </ul>
-            <ul class="navigation-list navigation-user">
-              <li class="navigation-item">
-                <a class="navigation-link" 
-                   href="#">
-                   <!-- <img src="images/assets-images/search.svg "
-                        alt="Поиск"></a> -->
-                   <span class="visually-hidden">Поиск</span></a>
-              </li>
-              <li class="navigation-item">
-                <a class="navigation-link" 
-                   href="#">
-                   <!-- <img src="images/assets-images/favorite.svg"
-                        alt="Избранное"></a> -->
-                   <span class="visually-hidden">Избранное</span></a>
-              </li>
-              <li class="navigation-item">
-                <a class="navigation-button" 
-                   href="#">Хочу сюда</a>
-              </li>
-            </ul>
-            </nav>        
+                <!-- пока временно, перенёс лого в .navigation-list -->
+                <!-- <a>
+                <img class="page-header-logo" 
+                     src="images/assets-images/logo-sedona.svg" 
+                     alt="Логотип города Седона" 
+                     width="139"
+                     height="70"></a> -->
+                <ul class="navigation-list">
+                    <li>
+                        <a>
+                            <img class="page-header-logo" 
+                                 src="images/assets-images/logo-sedona.svg" 
+                                 alt="Логотип города Седона" 
+                                 width="139"
+                                 height="70"></a>
+                    </li>
+                    <li class="navigation-item">
+                        <a class="navigation-link">Главная</a>
+                    </li>
+                    <li class="navigation-item">
+                        <a class="navigation-link" 
+                           href="#">О нас</a>
+                    </li>
+                    <li class="navigation-item">
+                        <a class="navigation-link" 
+                           href="catalog.html">Гостиницы</a>
+                    </li>
+                  <!----------------- Тестовые элементы меню, начало ------------------------>
+                  <!-- <li class="navigation-item">
+                    <a class="navigation-link" 
+                       href="catalog.html">TEST</a>
+                  </li>
+                  <li class="navigation-item">
+                    <a class="navigation-link" 
+                       href="catalog.html">TEST</a>
+                  </li> -->
+                  <!----------------- Тестовые элементы меню, конец ------------------------>
+                </ul>
+                <ul class="navigation-user">
+                    <!----------------- Тестовые элементы меню, начало ------------------------>
+                    <!-- <li class="navigation-item">
+                      <a class="navigation-link" 
+                         href="#">T</a>
+                    </li>
+                    <li class="navigation-item">
+                      <a class="navigation-link" 
+                         href="#">E</a>
+                    </li>
+                    <li class="navigation-item">
+                      <a class="navigation-link" 
+                         href="#">S</a>
+                    </li> -->
+                    <!-- <li class="navigation-item">
+                      <a class="navigation-link" 
+                         href="#">T</a>
+                    </li> -->
+                    <!----------------- Тестовые элементы меню, конец------------------------>
+                    <li class="navigation-item">
+                        <a class="navigation-link" 
+                           href="#">
+                            <img src="images/assets-images/search1.svg "
+                                 alt="Поиск"></a>
+                            <span class="visually-hidden">Поиск</span></a>
+                    </li>
+                    <li class="navigation-item">
+                        <a class="navigation-link" 
+                           href="#">
+                            <img src="images/assets-images/favorite.svg"
+                                alt="Избранное"></a>
+                            <span class="visually-hidden">Избранное</span></a>
+                    </li>          
+                    <li class="navigation-item">
+                        <a class="navigation-button" 
+                           href="#">Хочу сюда</a>
+                    </li>
+                </ul>
+            </nav>
         </header>
-         <main class="main-inner "><!--удалил временно main-container --->
+        <main class="main-inner "><!--удалил временно main-container --->
             <div class="page-inner-container">
                 <!-- "шапка"  main-->
                 <section class="catalog-header">
@@ -145,12 +182,12 @@
                         <fieldset class="catalog-filter-group">
                             <legend class="catalog-filter-title">Стоимость, 
                                 <span>₽</span></legend>
-                            <input type="range"
-                                   placeholder="от">
-                            <!-- <label class="control">от</label> -->
+                            <input type="text"
+                                   placeholder="от"
+                                   value="0">                            
                             <input type="text" 
-                                   value="9000">
-                            <!-- <label class="control">до</label> -->
+                                   placeholder="до"
+                                   value="9000">                            
                         </fieldset>
                         <div class="filter-button-wrapper">
                             <button class="button filter-button" 
@@ -402,17 +439,23 @@
                   <li class="footer-social-item">
                     <a class="button" 
                        href="https://twitter.com/htmlacademy_ru" 
-                       aria-label="twitter"></a>
+                       aria-label="twitter">
+                       <img src="images/assets-images/twitter.svg"
+                            alt="twitter"></a>
                   </li>
                   <li class="footer-social-item">
                     <a class="button" 
                        href="https://www.facebook.com/htmlacademy"
-                       aria-label="facebook"></a>                
+                       aria-label="facebook">
+                       <img src="images/assets-images/twitter.svg"
+                            alt="facebook"></a>                
                   </li>
                   <li class="footer-social-item">
                     <a class="button" 
                        href="https://www.youtube.com/c/HTMLAcademyRUS"
-                       aria-label="youtube"></a>
+                       aria-label="youtube">
+                       <img src="images/assets-images/twitter.svg"
+                            alt="youtube"></a>
                   </li>
                 </ul>
               </section>

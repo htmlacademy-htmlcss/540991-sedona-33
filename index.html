@@ -14,13 +14,22 @@
     <header class="page-header">
       <!-- навигация -->
       <nav class="navigation">
-        <a>
+        <!-- пока временно, перенёс лого в .navigation-list -->
+        <!-- <a>
           <img class="page-header-logo" 
                src="images/assets-images/logo-sedona.svg" 
                alt="Логотип города Седона" 
                width="139"
-               height="70"></a>
+               height="70"></a> -->
         <ul class="navigation-list">
+          <li>
+            <a>
+              <img class="page-header-logo" 
+                   src="images/assets-images/logo-sedona.svg" 
+                   alt="Логотип города Седона" 
+                   width="139"
+                   height="70"></a>
+          </li>
           <li class="navigation-item">
             <a class="navigation-link">Главная</a>
           </li>
@@ -32,18 +41,50 @@
             <a class="navigation-link" 
                href="catalog.html">Гостиницы</a>
           </li>
+          <!----------------- Тестовые элементы меню, начало ------------------------>
+          <!-- <li class="navigation-item">
+            <a class="navigation-link" 
+               href="catalog.html">TEST</a>
+          </li>
+          <li class="navigation-item">
+            <a class="navigation-link" 
+               href="catalog.html">TEST</a>
+          </li> -->
+          <!----------------- Тестовые элементы меню, конец ------------------------>
         </ul>
-        <ul class="navigation-list navigation-user">
+        <ul class="navigation-user">
+          <!----------------- Тестовые элементы меню, начало ------------------------>
+          <!-- <li class="navigation-item">
+            <a class="navigation-link" 
+               href="#">T</a>
+          </li>
+          <li class="navigation-item">
+            <a class="navigation-link" 
+               href="#">E</a>
+          </li>
+          <li class="navigation-item">
+            <a class="navigation-link" 
+               href="#">S</a>
+          </li> -->
+          <!-- <li class="navigation-item">
+            <a class="navigation-link" 
+               href="#">T</a>
+          </li> -->
+          <!----------------- Тестовые элементы меню, конец------------------------>
           <li class="navigation-item">
             <a class="navigation-link" 
                href="#">
+               <img src="images/assets-images/search1.svg "
+                    alt="Поиск"></a>
                <span class="visually-hidden">Поиск</span></a>
           </li>
           <li class="navigation-item">
             <a class="navigation-link" 
                href="#">
+               <img src="images/assets-images/favorite.svg"
+                    alt="Избранное"></a>
                <span class="visually-hidden">Избранное</span></a>
-          </li>
+          </li>          
           <li class="navigation-item">
             <a class="navigation-button" 
                href="#">Хочу сюда</a>
@@ -94,7 +135,7 @@
                      alt="домик" 
                      width="75" 
                      height="72">
-                <h3 class="advantages-item-title">Жильё</h3>
+                <h3 class="advantages-item-title black">Жильё</h3>
                 <p class="advantages-description">Рекомендуем пожить<br>в настоящем мотеле,<br>всё как в кино!</p>
               </li>
               <li class="advantages-item">
@@ -102,8 +143,8 @@
                      alt="бургер" 
                      width="75" 
                      height="72">
-                <h3 class="advantages-item-title">Еда</h3>
-                <p class="advantages-description">Всегда заказывайте<br>топовый фирменный бургер,<br>вы не
+                <h3 class="advantages-item-title black">Еда</h3>
+                <p class="advantages-description gray">Всегда заказывайте<br>топовый фирменный бургер,<br>вы не
                   разочаруетесь!
                 </p>
               </li>
@@ -112,8 +153,8 @@
                      alt="подарок" 
                      width="75" 
                      height="72">
-                <h3 class="advantages-item-title">Сувениры</h3>
-                <p class="advantages-description">Не только китайского,<br>но и настоящего
+                <h3 class="advantages-item-title black">Сувениры</h3>
+                <p class="advantages-description gray">Не только китайского,<br>но и настоящего
                   местного<br>производства!
                 </p>
               </li>
@@ -134,22 +175,22 @@
             </div>
           </li>
           <li class="advantages-item">            
-              <h3 class="advantages-item-title">Небольшая<br>площадь</h3>
+              <h3 class="advantages-item-title black">Небольшая<br>площадь</h3>
               <p>
                 <span>— №3 —</span></p>
-              <p class="advantages-description">Все достопримечательности<br>находятся очень близко</p>            
+              <p class="advantages-description gray">Все достопримечательности<br>находятся очень близко</p>            
           </li>
           <li class="advantages-item">            
-            <h3 class="advantages-item-title">Красивая<br>дорога</h3>
+            <h3 class="advantages-item-title black">Красивая<br>дорога</h3>
             <p>
               <span>— №4 ——</span></p>
-            <p class="advantages-description">Ехать в Седону из Лас-Вегаса<br>совсем не скучно!</p>
+            <p class="advantages-description gray">Ехать в Седону из Лас-Вегаса<br>совсем не скучно!</p>
           </li>
           <li class="advantages-item">
-            <h3 class="advantages-item-title">Мало<br>туристов</h3>
+            <h3 class="advantages-item-title black">Мало<br>туристов</h3>
             <p>
               <span>— №5 —</span></p>
-            <p class="advantages-description">Большинство едет в Гранд<br>Каньон и толпится там</p>
+            <p class="advantages-description gray">Большинство едет в Гранд<br>Каньон и толпится там</p>
           </li>
         </ol>
       </section>
@@ -190,17 +231,23 @@
             <li class="footer-social-item">
               <a class="button" 
                  href="https://twitter.com/htmlacademy_ru" 
-                 aria-label="twitter"></a>
+                 aria-label="twitter">
+                <img src="images/assets-images/twitter.svg"
+                     alt="twitter"></a>
             </li>
             <li class="footer-social-item">
               <a class="button" 
                  href="https://www.facebook.com/htmlacademy"
-                 aria-label="facebook"></a>                
+                 aria-label="facebook">
+                <img src="images/assets-images/facebook.svg"
+                     alt="facebook"></a>                
             </li>
             <li class="footer-social-item">
               <a class="button" 
                  href="https://www.youtube.com/c/HTMLAcademyRUS"
-                 aria-label="youtube"></a>
+                 aria-label="youtube">
+                <img src="images/assets-images/youtube.svg"
+                     alt="youtube"></a>
             </li>
           </ul>
         </section>
