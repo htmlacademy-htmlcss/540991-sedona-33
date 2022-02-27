@@ -675,7 +675,7 @@ width: 100%;
 .hotels-card p { 
   margin: 0;
   margin-bottom: 16px;
-
+  width: 133px;
   font-weight: normal;
   font-size: 18px;
   line-height: 23px;
@@ -686,9 +686,9 @@ flex-direction: row;
 align-items: flex-start;
 padding: 0px; */
 }
-/* .hotels-card-price {  
-  margin-left: auto;
-} */
+p + .hotels-card-price {  
+  margin-left: 25px;
+}
 
 .hotels-card-button-link {
   margin: 0;
