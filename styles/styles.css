@@ -110,6 +110,7 @@ body {
 }
 
 .navigation-link {
+  position: relative;
   display: block;
   padding: 20px 17px;
   font-family: "PT Sans", sans-serif;
@@ -155,6 +156,15 @@ body {
 }
 .navigation-user li:last-child{
   margin-left: 20px;
+}
+.navigation-icon {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+  fill: #e01616;
 }
 .navigation-button{
   display: block;
@@ -324,8 +334,7 @@ width: 100%;
   margin: 0;
   padding: 0;
   padding-top: 94px;
-  width: 1200px;
-  /* min-height: 411px;   */
+  width: 1200px;  
   color: #FFFFFF;
   background-color: #333333;
   background-image: url("../images/index-images/mail-background.jpg");
@@ -364,8 +373,7 @@ width: 100%;
   margin: 0;
   padding: 0;
   padding-top: 73px;
-  max-width: 1200px;
-  /* min-height: 411px;    */
+  max-width: 1200px;  
 }
 .newsletter-title-catalog{
   margin: 0;
@@ -447,10 +455,8 @@ width: 100%;
   list-style-type: none;
 }
 .footer-social-item {
-  margin-right: 30px;
-  /* border: 1px solid black; */
+  margin-right: 30px;  
 }
-
 
 .page-footer-logo-wrapper{
   width:20%;
@@ -516,8 +522,7 @@ width: 100%;
 .hotels-catalog{
   margin: 0;
   padding: 0;
-  padding-top: 144px;
-  /* text-align: center;   */
+  padding-top: 144px; 
 }
 
 .catalog-products{
@@ -584,6 +589,9 @@ width: 100%;
   height: 44px;  
   border: 1px solid #000000;
 }
+.sorting-type {
+  margin-right: auto;
+}
 
 /* карточки */
 /*----- поиск гомтиницы----------------------------------------------------------------- */
@@ -644,14 +652,12 @@ width: 100%;
   flex-direction: column;
   padding: 20px;
   width:300px ;
-  background-color: #FFFFFF; 
-  border: 1px solid black;
+  background-color: #FFFFFF;   
   }
 .hotels-card-link {
   text-decoration: none;
 }
-.rating-container{
-  /* padding-top: 16px; */
+.rating-container{  
   display: flex;  
   flex-wrap: wrap;
   margin-top: auto;
@@ -664,8 +670,9 @@ width: 100%;
   font-size: 24px;
   line-height: 31px;
   color: #000000;
-
+  
   margin: 0;
+  margin-right: 50px;
 }
 .product-card-title-link{
   text-decoration: none;
@@ -680,11 +687,6 @@ width: 100%;
   font-size: 18px;
   line-height: 23px;
   color: #333333;
-/* 
-  display: flex;
-flex-direction: row;
-align-items: flex-start;
-padding: 0px; */
 }
 p + .hotels-card-price {  
   margin-left: 25px;
