@@ -14,22 +14,20 @@
   <div class="page-shadow-container">
     <header class="page-header">
       <!-- навигация -->
-      <nav class="navigation">       
+      <nav class="navigation">
+        <a class="header-logo-link">
+          <img class="page-header-logo" 
+               src="images/assets-images/logo-sedona.svg" 
+               alt="Логотип города Седона" 
+               width="139"
+               height="70"></a>       
         <ul class="navigation-list">
-          <li>
-            <a>
-              <img class="page-header-logo" 
-                   src="images/assets-images/logo-sedona.svg" 
-                   alt="Логотип города Седона" 
-                   width="139"
-                   height="70"></a>
-          </li>
           <li class="navigation-item">
             <a class="navigation-link">Главная</a>
           </li>
           <li class="navigation-item">
             <a class="navigation-link" 
-               href="#">О нас</a>
+               href="#">О Седоне</a>
           </li>
           <li class="navigation-item">
             <a class="navigation-link" 
@@ -97,7 +95,7 @@
           </li>          
           <li class="navigation-item">
             <a class="navigation-button" 
-               href="#">Хочу сюда</a>
+               href="#">Хочу сюда!</a>
           </li>
         </ul>
       </nav>
@@ -112,11 +110,11 @@
              alt="Welcome to gorgeous Sedona 'Because the Grand Canyon sucks!'" 
              width="458" 
              height="352">
-        <img class="divider" 
+        <!-- <img class="divider" 
              src="images/index-images/divider.svg" 
              alt="декор" 
              width="1200" 
-             height="57">
+             height="57"> -->
       </section>
       <!-- Преимущества  -->
       <section class="advantages">
@@ -140,30 +138,18 @@
                    height="384">
             </div>
             <ul class="advantages-list-icon">
-              <li class="advantages-item">
-                <img src="images/index-images/icon-1.svg" 
-                     alt="домик" 
-                     width="75" 
-                     height="72">
-                <h3 class="advantages-item-title black">Жильё</h3>
-                <p class="advantages-description">Рекомендуем пожить<br>в настоящем мотеле,<br>всё как в кино!</p>
+              <li class="advantages-item">                
+                <h4 class="advantages-icon-title icon-house">Жильё</h4>
+                <p class="advantages-description gray">Рекомендуем пожить<br>в настоящем мотеле,<br>всё как в кино!</p>
               </li>
-              <li class="advantages-item">
-                <img src="images/index-images/icon-2.svg" 
-                     alt="бургер" 
-                     width="75" 
-                     height="72">
-                <h3 class="advantages-item-title black">Еда</h3>
+              <li class="advantages-item">                
+                <h4 class="advantages-icon-title icon-burger">Еда</h4>
                 <p class="advantages-description gray">Всегда заказывайте<br>топовый фирменный бургер,<br>вы не
                   разочаруетесь!
                 </p>
               </li>
-              <li class="advantages-item">
-                <img src="images/index-images/icon-3.svg" 
-                     alt="подарок" 
-                     width="75" 
-                     height="72">
-                <h3 class="advantages-item-title black">Сувениры</h3>
+              <li class="advantages-item">                
+                <h4 class="advantages-icon-title icon-souvenirs">Сувениры</h4>
                 <p class="advantages-description gray">Не только китайского,<br>но и настоящего
                   местного<br>производства!
                 </p>
@@ -184,16 +170,16 @@
               </div>
             </div>
           </li>
-          <li class="advantages-item">            
-              <h3 class="advantages-item-title black">Небольшая<br>площадь</h3>
-              <p>
-                <span>— №3 —</span></p>
-              <p class="advantages-description gray">Все достопримечательности<br>находятся очень близко</p>            
+          <li class="advantages-item">                        
+                <h3 class="advantages-item-title black">Небольшая<br>площадь</h3>
+                <p>
+                  <span>— №3 —</span></p>
+                <p class="advantages-description gray">Все достопримечательности<br>находятся очень близко</p>            
           </li>
           <li class="advantages-item">            
             <h3 class="advantages-item-title black">Красивая<br>дорога</h3>
             <p>
-              <span>— №4 ——</span></p>
+              <span>— №4 —</span></p>
             <p class="advantages-description gray">Ехать в Седону из Лас-Вегаса<br>совсем не скучно!</p>
           </li>
           <li class="advantages-item">
@@ -207,15 +193,14 @@
       <!-- Поиск гостиницы  -->
       <section class="hotel-search">
         <h2 class="hotel-search-title">Заинтересовались?</h2>
-        <p class="hotel-search-description">Укажите предполагаемые даты поездки,
-          и мы покажем вам лучшие предложения гостиниц в Седоне</p>
+        <p class="hotel-search-description">Укажите предполагаемые даты поездки,<br>и мы покажем вам лучшие предложения гостиниц в Седоне</p>
         <a class="button search-button" 
            href="#">ПОИСК ГОСТИНИЦЫ В СЕДОНЕ</a>
       </section>
       <!-- Подпишитесь на рассылку -->
       <section class="newsletter">
         <h2 class="newsletter-title">Подпишитесь на рассылку</h2>
-        <p class="newsletter-description">Только полезная информация и никакого спама,
+        <p class="newsletter-description">Только полезная информация и никакого спама,<br>
           честное бойскаутское!</p>
         <form class="newsletter-form" 
               action="https://echo.htmlacademy.ru/" 
