@@ -217,7 +217,7 @@ body {
   background-image: url("../images/index-images/divider.svg");
   background-size: 100% auto;
   background-repeat: no-repeat;
-  background-position: 0 376px, 0 0;  
+  background-position: 0 376px;  
 }
 .welcome-logo {
   display: block;
@@ -275,7 +275,7 @@ body {
 
 .advantages-item-title {
   margin: 0;
-  margin-top: 10px;
+  margin-top: 90px;
   padding: 10px; 
   font-family: "PT Sans", sans-serif;
   font-weight: 700;
@@ -284,18 +284,17 @@ body {
   vertical-align: Top;
   text-transform: uppercase;
 }
-/* .advantages-item-title ::before {
-  background-image: url("../images/index-images/icon-1.svg");
-  background-size: 100% auto;
-  background-repeat: no-repeat;
-} */
+.content-propper .advantages-item-title {
+  margin-top: 10px;
+}
+
 .black{
   color: #000000;
 }
 
 .advantages-description { 
   margin: 0;  
-  padding: 10px; 
+  padding: 10px;   
   font-style: normal;
   font-weight: 400;
   font-size: 18px;
@@ -316,10 +315,8 @@ body {
 }
 
 .content-propper {  
-  width: 400px;  
-      
+  width: 400px;        
 }
-
 
 .advantages-item span {
   font-weight: 400;
@@ -343,30 +340,57 @@ body {
 .advantages-item.full-width{
 width: 100%;
 }
-.advantages-item-icon{
-  width: 400px;
-  min-height: 384px;
-  text-align: center;  
-  background-color: rgba(131, 179, 211, 0.12);
-}
-.icon-black{
+
+.advantages-icon-title {
+  margin: 0;
+  /* margin-top: 10px; */
+  padding: 10px; 
   color: #000000;
+  font-family: "PT Sans", sans-serif;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+  vertical-align: Top;
+  text-transform: uppercase;
+/* для ::before */
+  position: relative;
+  margin-top: 175px;
+}
+.advantages-icon-title::before {
   content: '';
   position: absolute;
   width: 75px;
-  height: 72px;
+  height: 76px;
   display: block;
-  background-position: center;
+  bottom: 60px;
+  left: 50%;
+  transform: translateX(-50%);
 }
-.advantages-item-icon
-.icon-black ::before {
-  background-image: url("images/index-images/icon-1.svg");
+.icon-house::before {
+  background-image: url("../images/index-images/icon-house.svg");  
+  background-repeat: no-repeat;
+}
+.icon-burger::before {
+  background-image: url("../images/index-images/icon-burger.svg");  
+  background-repeat: no-repeat;
+}
+.icon-souvenirs::before {
+  background-image: url("../images/index-images/icon-souvenirs.svg");  
+  background-repeat: no-repeat;
+}
+
+/* .one::before { 
+  margin: auto;
+  margin-top: 75px;
+  padding-bottom: 25px;
+  content: '';  
+  width: 75px;
+  height: 72px;
+  display: block;  
+  background-image: url("../images/index-images/icon-1.svg");
   background-size: 100% auto;
   background-repeat: no-repeat;
-
-  
-
-}
+} */
 
 
 /* ------------------выборка :nth-child()*/
@@ -389,7 +413,8 @@ width: 100%;
   background-color: #333333;
   background-image: url("../images/index-images/mail-background.jpg");
   background-size: 100% auto;
-  background-repeat: no-repeat;  
+  background-repeat: no-repeat;   
+  font-weight: 400; 
   text-align: center; 
 
 }
@@ -449,15 +474,17 @@ width: 100%;
 .newsletter-form{
   display: flex;
   justify-content: center;
-  padding-bottom: 110px;
+  padding-bottom: 94px;
 }
 .field {
   padding: 0;
-  padding-left: 22px;
-  width: 600px;
+  padding-left: 20px;
+  width: 580px;
   height: 60px;
   border: none;
-  border-radius: 10px 0px 0px 10px;  
+  border-radius: 10px 0px 0px 10px;
+  font-family: "PT Sans", sans-serif;
+  font-style: normal;  
   font-weight: 400;
   font-size: 18px;
   line-height: 26px;
@@ -468,9 +495,10 @@ width: 100%;
 .newsletter-button{
   width: 200px;
   height: 60px;
-  padding: 1px 1px;
   border-radius: 0px 10px 10px 0px;
-  border: none;
+  border: none;  
+  font-family: "PT Sans", sans-serif;
+  font-style: normal;
   font-weight: 700;
   font-size: 20px;
   line-height: 26px;
@@ -494,7 +522,7 @@ width: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding-top: 40px;
+  padding-top: 30px;
 }
 
 .footer-social{  
@@ -668,6 +696,8 @@ width: 100%;
   margin: 0 auto;
   margin-top: 29px;
   width: 720px;
+  font-family: PT Sans;
+  font-style: normal;
   font-weight: 400;
   font-size: 22px;
   line-height: 26px;
