@@ -212,21 +212,21 @@ body {
 /* добро пожаловать------------------------------------------------------------------- */
 
 .welcome{   
-  height: 485px;   
+  min-height: 485px;   
   text-align: center;
   background-image: url("../images/index-images/divider.svg");
   background-size: 100% auto;
   background-repeat: no-repeat;
-  background-position: 0 376px;  
+  background-position: 0 377px;  
 }
 .welcome-logo {
   display: block;
   margin: 0 auto;
 }
-.divider{  
+/* .divider{  
   display: block;
   margin-top: 25px;
-}
+} */
 
 /* преимущества ---------------------------------------------------------------------*/
 .advantages {  
@@ -275,8 +275,8 @@ body {
 
 .advantages-item-title {
   margin: 0;
-  margin-top: 90px;
-  padding: 10px; 
+  margin-top: 84px;
+  padding: 13px; 
   font-family: "PT Sans", sans-serif;
   font-weight: 700;
   font-size: 24px;
@@ -474,7 +474,7 @@ width: 100%;
 .newsletter-form{
   display: flex;
   justify-content: center;
-  padding-bottom: 94px;
+  padding-bottom: 93px;
 }
 .field {
   padding: 0;
