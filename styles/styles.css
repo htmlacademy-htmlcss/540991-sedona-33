@@ -204,9 +204,10 @@ body {
   padding: 0;
   background-color: #FFFFFF;
   color: #333333;
-  background-image: url("../images/catalog-images/filters-background.jpg");
+  /* переношу в .catalog-header */
+  /* background-image: url("../images/catalog-images/filters-background.jpg");
   background-size: 100% auto;
-  background-repeat: no-repeat;
+  background-repeat: no-repeat; */
   
 }
 /* добро пожаловать------------------------------------------------------------------- */
@@ -217,7 +218,7 @@ body {
   background-image: url("../images/index-images/divider.svg");
   background-size: 100% auto;
   background-repeat: no-repeat;
-  background-position: 0 377px;  
+  background-position: 0 378px;  
 }
 .welcome-logo {
   display: block;
@@ -232,6 +233,7 @@ body {
 .advantages {  
   margin: 0;
   padding: 0;
+  padding-top: 1px;
   background-color: #FFFFFF;
 }
 
@@ -559,14 +561,20 @@ width: 100%;
 
 /* --------------КАТАЛОГ------------------------------------------------------------ */
   /* ----------------------------------------------------------------------------- */
-
+/* этот паддинг переносим в .catalog-header и .hotels-catalog{ , вместо общего div=page-inner-container
+ который потом удалю.*/
 .page-inner-container{
   padding: 30px 72px; 
 }
 .catalog-header {
   margin: 0;
   padding: 0;
-  color: #FFFFFF;  
+  padding: 30px 72px;
+  color: #FFFFFF;
+  background-color: #333333;
+  background-image: url("../images/catalog-images/filters-background.jpg");  
+  background-size: cover;
+  background-repeat: no-repeat;  
 }
 .inner-header-title {
   margin: 0;
@@ -602,7 +610,9 @@ width: 100%;
 .hotels-catalog{
   margin: 0;
   padding: 0;
-  padding-top: 144px; 
+  padding-top: 144px;
+  padding: 30px 72px;
+
 }
 
 .catalog-products{
