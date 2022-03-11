@@ -118,9 +118,10 @@ body {
 }
 
 .navigation-link {
+  margin: 20px 17px;
   position: relative;
   display: block;
-  padding: 20px 17px;
+  /* padding: 20px 17px; */
   font-family: "PT Sans", sans-serif;
   font-style: normal;
   font-weight: 700;
@@ -134,13 +135,20 @@ body {
  .navigation-link:hover{
   color: #756257;
  }
- .navigation-link:focus{
-  text-transform: uppercase;
+ .navigation-link:focus{  
   color: #000000;
  }
  .navigation-link:active{
   color: rgba(117, 98, 87, 0.3);
  }
+.active-link::before{
+  content: "";
+  outline: 2px solid #756257;
+  position: absolute;
+  width: 100%;
+  display: block;
+  margin-top: 44px;
+}
 /* .navigation-link:current::before{
   color: #000000;
   position: absolute;
@@ -191,10 +199,8 @@ body {
   right: 0;
   bottom: 0;
   left: 0;
-  margin: auto;
-  /* padding: 0;
-  padding: 20px 17px; */
-  fill: #e01616;
+  margin: auto;  
+  fill: #000000;
 }
 .navigation-icon:hover{
   fill: #756257;
@@ -548,12 +554,12 @@ width: 100%;
 }
 .field:focus{
   background: #E6E6E6;
-  border: 3px solid #83B3D3;  
-  width: 554px;
-  height: 54px;  
+  outline: 3px solid #83B3D3;  
+  /* width: 554px;
+  height: 54px;   */
 }
-.field:error{
-  border: 2px solid #FF5757;
+.field:invalid {
+  outline: 2px solid #FF5757;
   box-sizing: border-box;
 }
 
@@ -624,20 +630,12 @@ width: 100%;
   height: 40px;
   display: flex;
   align-items: center;
-  justify-content: center;
-  /* border: 3px solid none;
-  box-sizing: border-box;
-  border-radius: 10px; */
-  
+  justify-content: center;  
 }
 .footer-social-icon{
-
   fill: #83B3D3;
 }
 .footer-social-link:hover svg{
-  fill: #68A2CA;
-}
-.footer-social-link:focus svg{
   fill: #68A2CA;
 }
 .footer-social-link:focus{  
@@ -645,13 +643,13 @@ width: 100%;
   box-sizing: border-box;
   border-radius: 10px; 
 }
-.footer-social-link:active svg{
-  border-color: none;
+.footer-social-link:focus svg{
   fill: #68A2CA;
-  fill-opacity:0.3 ;
-  stroke:rgba(0, 0, 0, 0.25); 
-  box-sizing: border-box;
-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.footer-social-link:active {
+  opacity:0.3;
+  border: none;
 }
 
 .page-footer-logo-wrapper{
@@ -672,6 +670,24 @@ box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   text-decoration: none;
 
 }
+.page-footer-phone:hover,
+.page-footer-htmlacademy-link svg:hover {
+  color: #756257;
+}
+.page-footer-phone:focus,
+.page-footer-htmlacademy-link:focus {
+  color: #756257;
+  border: 3px solid #83B3D3;
+  box-sizing: border-box;
+  border-radius: 10px;
+}
+.page-footer-phone:active,
+.page-footer-htmlacademy-link:active {
+  outline: none;
+  fill: #756257;
+  opacity: 30%;
+}
+
 
 /* --------------КАТАЛОГ------------------------------------------------------------ */
   /* ----------------------------------------------------------------------------- */
