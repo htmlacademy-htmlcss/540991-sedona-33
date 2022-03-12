@@ -134,9 +134,12 @@ body {
  } 
  .navigation-link:hover{
   color: #756257;
+  background-color: #595959;
  }
  .navigation-link:focus{  
   color: #000000;
+  box-shadow: inset 0 0 0 4px #e7e7e7;
+  outline: none;
  }
  .navigation-link:active{
   color: rgba(117, 98, 87, 0.3);
@@ -552,15 +555,14 @@ width: 100%;
 .field:hover{
   background: #E6E6E6;
 }
-.field:focus{
+.field:focus{  
   background: #E6E6E6;
-  outline: 3px solid #83B3D3;  
-  /* width: 554px;
-  height: 54px;   */
+  box-shadow: inset 0 0 0 3px #83B3D3;
+  outline: none;
+  
 }
 .field:invalid {
-  outline: 2px solid #FF5757;
-  box-sizing: border-box;
+  box-shadow: inset 0 0 0 2px #FF5757;  
 }
 
 .newsletter-button{
@@ -586,6 +588,7 @@ width: 100%;
 .newsletter-button:focus{
   background: #68A2CA;
   border: 3px solid #756257;
+  outline: none;
 }
 .newsletter-button:active{
   background: #68A2CA;
@@ -635,15 +638,16 @@ width: 100%;
 .footer-social-icon{
   fill: #83B3D3;
 }
-.footer-social-link:hover svg{
-  fill: #68A2CA;
+.footer-social-link svg:hover  {
+  fill: #68A2CA;  
 }
-.footer-social-link:focus{  
-  border: 3px solid #83B3D3;
-  box-sizing: border-box;
+.footer-social-link:focus{   
+  box-shadow: inset 0 0 0 3px #83B3D3;
   border-radius: 10px; 
+  outline: none;
+  
 }
-.footer-social-link:focus svg{
+.footer-social-link svg:focus {
   fill: #68A2CA;
 }
 
@@ -670,21 +674,42 @@ width: 100%;
   text-decoration: none;
 
 }
+
+
+/* вопросы,,,,,,,,,,,?????????????????????????????????? */
+.page-footer-htmlacademy-link{
+  height: 100px;  
+  box-sizing: border-box;
+}
 .page-footer-phone:hover,
-.page-footer-htmlacademy-link svg:hover {
+.page-footer-htmlacademy-link :hover  {
+  fill: #756257;
   color: #756257;
 }
 .page-footer-phone:focus,
-.page-footer-htmlacademy-link:focus {
+.page-footer-htmlacademy-link:focus svg{
+  
+ color: #756257;
+  border: 3px solid #83B3D3;
+  border-radius: 10px;
+  /* padding: 10px;  */
+}
+/* .page-footer-htmlacademy-link svg:focus{
+  outline: none; 
+  fill: #756257;}
+   */
+
+/* .page-footer-htmlacademy-link:focus svg {
   color: #756257;
   border: 3px solid #83B3D3;
-  box-sizing: border-box;
   border-radius: 10px;
-}
+  padding: 10px;
+} */
+
+
+
 .page-footer-phone:active,
 .page-footer-htmlacademy-link:active {
-  outline: none;
-  fill: #756257;
   opacity: 30%;
 }
 
