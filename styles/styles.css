@@ -133,8 +133,7 @@ body {
   text-decoration: none;
  } 
  .navigation-link:hover{
-  color: #756257;
-  background-color: #595959;
+  color: #756257;  
  }
  .navigation-link:focus{  
   color: #000000;
@@ -152,17 +151,7 @@ body {
   display: block;
   margin-top: 44px;
 }
-/* .navigation-link:current::before{
-  color: #000000;
-  position: absolute;
-  right: 20px;
-  bottom: 0;
-  left: 20px;
-  height: 4px;
-  background-color: #ffffff;
-  content: "";  
-  border: 2px solid #756257;
-} */
+
 .navigation-list {
   display: flex;
   flex-wrap: wrap;
@@ -192,6 +181,7 @@ body {
   min-width: 18px;
   min-height: 18px;
   padding: 0;
+  margin: 20px 10px;
 }
 .navigation-user li:last-child{
   margin-left: 20px;
@@ -603,14 +593,14 @@ width: 100%;
   margin-top: auto;
 }
 .page-footer-container{
-  width: 1056px; 
+  width: 1075px; 
 
   margin: 0 auto;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
-  padding-top: 30px;
+  padding-top: 20px;
 }
 
 .footer-social{  
@@ -672,14 +662,18 @@ width: 100%;
   text-transform: uppercase;
   color: #000000;
   text-decoration: none;
+  padding: 10px
 
+}
+.page-footer-htmlacademy-link{
+  padding: 10px
 }
 
 
 /* вопросы,,,,,,,,,,,?????????????????????????????????? */
 .page-footer-htmlacademy-link{
   height: 100px;  
-  box-sizing: border-box;
+  /* box-sizing: border-box; */
 }
 .page-footer-phone:hover,
 .page-footer-htmlacademy-link :hover  {
@@ -689,15 +683,16 @@ width: 100%;
 .page-footer-phone:focus,
 .page-footer-htmlacademy-link:focus svg{
   
- color: #756257;
+  color: #756257;
   border: 3px solid #83B3D3;
   border-radius: 10px;
+  outline: none;
   /* padding: 10px;  */
 }
-/* .page-footer-htmlacademy-link svg:focus{
+.page-footer-htmlacademy-link svg:focus{
   outline: none; 
   fill: #756257;}
-   */
+  
 
 /* .page-footer-htmlacademy-link:focus svg {
   color: #756257;
