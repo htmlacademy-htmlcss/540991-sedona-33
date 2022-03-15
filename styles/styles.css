@@ -586,10 +586,8 @@ width: 100%;
   justify-content: start;  
   list-style-type: none;
 }
-.footer-social-item {
- 
-  margin-right: 3px;  
-  
+.footer-social-item { 
+  margin-right: 3px;    
 }
 .footer-social-link{
   width: 40px;
@@ -607,8 +605,7 @@ width: 100%;
 .footer-social-link:focus{   
   box-shadow: inset 0 0 0 3px #83B3D3;
   border-radius: 10px; 
-  outline: none;
-  
+  outline: none;  
 }
 .footer-social-link svg:focus {
   fill: #68A2CA;
@@ -622,7 +619,6 @@ width: 100%;
 .page-footer-logo-wrapper{
   width:20%;
   text-align: right;
-
 }
 
 .page-footer-phone{
@@ -636,46 +632,50 @@ width: 100%;
   color: #000000;
   text-decoration: none;
   padding: 10px;
-
 }
-
-
-
-/* вопросы,,,,,,,,,,,?????????????????????????????????? */
-.page-footer-htmlacademy-link{
-  padding: 10px;
-  display: block;
- 
-}
-.page-footer-phone:hover,
-.page-footer-htmlacademy-link svg:hover  {
-  fill: #756257;
+.page-footer-phone:hover{
   color: #756257;
 }
-.page-footer-phone:focus,
-.page-footer-htmlacademy-link:focus svg{
-  
+.page-footer-phone:focus{
+  padding: 7px;
   color: #756257;
   border: 3px solid #83B3D3;
   border-radius: 10px;
   outline: none;
 }
-.page-footer-htmlacademy-link:focus{
-  outline: none;
-}
-.page-footer-phone:active,
-.page-footer-htmlacademy-link:active {
+.page-footer-phone:active {
   opacity: 30%;
 }
 
+
+.page-footer-htmlacademy-link{
+  display: block;
+}
+.page-footer-htmlacademy-link svg {
+  padding: 10px;
+}
+.page-footer-htmlacademy-link svg:hover  {
+  fill: #756257; 
+}
+.page-footer-htmlacademy-link:focus {
+  outline: none;
+}
+.page-footer-htmlacademy-link:focus svg{
+  fill: #756257;
+  outline: 3px solid #83B3D3;
+  border-radius: 10px; 
+}
+.page-footer-htmlacademy-link:active {
+  opacity: 30%;
+}
 
 /* --------------КАТАЛОГ------------------------------------------------------------ */
   /* ----------------------------------------------------------------------------- */
 /* этот паддинг переносим в .catalog-header и .hotels-catalog{ , вместо общего div=page-inner-container
  который потом удалю.*/
-.page-inner-container{
+/* .page-inner-container{
   padding: 30px 72px; 
-}
+} */
 .catalog-header {
   margin: 0;
   padding: 0;
@@ -708,9 +708,6 @@ width: 100%;
   position: relative;
   margin-right: 26px;
   list-style-type: none;
-
-  /* outline: tomato solid 2px;
-  outline-offset: -2px; */
 }
 .breadcrumbs-item::after {
   position: absolute;
@@ -722,8 +719,7 @@ width: 100%;
   content: "";
   background-image: url("../images/catalog-images/arrow.svg");
   background-repeat: no-repeat;
-  background-size: 5px 8px;
-  /* background-position: center right 11px; */
+  background-size: 5px 8px; 
   opacity: 0.3;
 
   
@@ -731,16 +727,9 @@ width: 100%;
 .breadcrumbs-item:last-child::after {
   content: none;
 }
-/* видимо не то что нужно */
-/* .breadcrumbs-arrow{
-  padding-right: 26px;
-  background-image: url("../images/catalog-images/arrow.svg");
-  background-repeat: no-repeat;
-  background-size: 5px 8px;
-  background-position: center right 11px;
-  opacity: 0.3;
-} */
+
 .breadcrumbs-link {
+  
   font-weight: 400;
   font-size: 16px;
   line-height: 21px;
@@ -750,35 +739,110 @@ width: 100%;
 
   display: inline-block;
   height: 21px;
-  padding: 0 6px;
-  /* попытка убрать сдвиг станицы при фокусе */
-  border: 3px solid none;  
+  padding: 0 6px;  
 }
-/* отключаю за ненадобностью, пока в тесте */
-/* .breadcrumbs-item:not(:last-child) {
-  margin-right: 26px;
-} */
+
 
 .breadcrumbs-link:hover{
   opacity: 0.6;
 }
-.breadcrumbs-link:focus{
-  outline: none;
+.breadcrumbs-link:focus{ 
   border-radius: 4px;
-  border: 3px solid #83B3D3;
-
+  outline: 3px solid #83B3D3;
 }
-/* .breadcrumbs-item:focus{
-  outline: none;
-  border-radius: 4px;
-  border: 3px solid #83B3D3;
-} */
+
 .breadcrumbs-link:active{
   opacity: 0.3;
 }
+/* ------=========== чекбокс===========--- */
+  /* content: url(../images/catalog-images/tick.svg); */
+  
+
+.control {
+  position: relative;
+  display: block;
+  padding-left: 36px;
+}
+
+.control-mark {
+  position: absolute;
+  top: 2px;
+  left: 0;
+  width: 20px;
+  height: 20px;
+  border-radius: 4px;
+  background-color: #FFFFFF;
+}
+.control:hover .control-mark {  
+  opacity: 0.6;
+}
+.control:focus .control-mark {
+  opacity: 0.6;
+  outline: 3px solid #83B3D3;
+}
+.control:active .control-mark {
+  opacity: 0.3;
+}
+
+/* .control-input:disabled + .control-mark {
+  border-color: #242424;
+} */
+.control-label {
+  line-height: 22px;
+  font-weight: 400;
+}
+.control-input[type="checkbox"]:checked + .control-mark::before{
+  position: absolute;
+  top: -2px;
+  left: 4px;
+  width: 12px;
+  height: 10px;  
+  content: url(../images/catalog-images/tick.svg);
+}
+.control-input[type="radio"] + .control-mark {
+  border-radius: 50%;
+}
+.control-input[type="radio"]:checked + .control-mark::before {
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  width: 10px;
+  height: 10px;
+  background-color: #242424;
+  border-radius: 50%;
+  content: "";
+}
+
+.catalog-filter-list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.catalog-filter-item:not(:last-child) {
+  margin-bottom: 16px;
+}
+
+
+
+/* ========================================*/
+
+
+/* .catalog-filter-item input:checked+label::before{
+  content: url(../images/catalog-images/tick.svg);
+  width: 12px;
+  height: 10px;
+}
+
+
+    
+
+
+
+
 
 /* сортировка */
-
+/* =================================== */
 .hotels-catalog{
   margin: 0;
   padding: 0;
