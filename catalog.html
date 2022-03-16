@@ -243,18 +243,18 @@
                             <!-- по цене -->
                         <fieldset class="catalog-filter-group">
                             <legend class="catalog-filter-title">Стоимость, 
-                                <span>₽</span></legend>
+                                <span>₽</span>:</legend>
                                 <div class="price-box-inputs">
                                     <label class="catalog-filter-label">
                                         <input class="range-input price-min" 
-                                               type="number" 
+                                               type="text" 
                                                value="0" 
                                                placeholder="от"
                                                name="min-price">
                                     </label>
                                     <label class="catalog-filter-label">
                                         <input class="range-input price-max"
-                                               type="number"
+                                               type="text"
                                                value="9000"
                                                name="max-price">
                                     </label>
@@ -274,7 +274,7 @@
                         </fieldset>
                         <div class="filter-button-wrapper">
                             <button class="button filter-button" 
-                                    type="submit">Применить</button>
+                                    type="submit">Применить</button>                                    
                             <button class="button filter-reset" 
                                     type="reset">Сбросить</button>
                         </div>
@@ -330,25 +330,7 @@
                               </svg>
                               <span class="visually-hidden">Показать список</span></a>
                             
-                          </div>
-                        <!-- <div class="sorting-container">                            
-                            <div class="select sorting-type">
-                              <select class="select-control" aria-label="Сортировка">
-                                <option value="popular">Сначала популярное</option>
-                                <option value="cheap">Сначала дешёвое</option>
-                                <option value="expensive">Сначала дорогое</option>
-                              </select>
-                            </div>                  
-                            <a class="button" 
-                               href="#">
-                               <span class="visually-hidden">Показать карточки</span></a>
-                            <a class="button" 
-                               href="#">
-                               <span class="visually-hidden">Показать слайд</span></a>
-                            <a class="button" 
-                               href="#">
-                               <span class="visually-hidden">Показать список</span></a>
-                        </div> -->
+                          </div>                        
                     </div>
                     <h2 class="visually-hidden">Каталог</h2>
                     <ul class="hotels-list">
@@ -542,19 +524,22 @@
                         </ul>
                         <!-- форма-гостиниц на странице  -->
                         <div class="count-container">
-                            <a class="count-link"
-                               href="#">Гостиниц на странице:
-                            <ul>
-                                <!--место под расрывающийся список количества гостиниц  -->
-                            </ul></a>                
+                            <p class="count">Гостиниц на странице:</p>                                            
+                            <div class="select count-type">
+                                <select class="count-control"
+                                        aria-label="Сортировка">
+                                  <option value="">4</option>
+                                  <option value="">6</option>
+                                  <option value="">8</option>
+                                </select>
+                              </div>
                         </div> 
                     </div>           
                 </section>
                 <!-- рассылка -->
                 <section class="newsletter-catalog">
                         <h2 class="newsletter-title-catalog">Подпишитесь на рассылку</h2>
-                        <p class="newsletter-description-catalog">Только полезная информация и никакого спама,
-                            честное бойскаутское!</p>
+                        <p class="newsletter-description-catalog">Только полезная информация и никакого спама,<br>честное бойскаутское!</p>
                         <form class="newsletter-form" 
                               action="https://echo.htmlacademy.ru/" 
                               method="post">                            
