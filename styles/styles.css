@@ -884,10 +884,10 @@ width: 100%;
 .breadcrumbs-link:active{
   opacity: 0.3;
 }
-/* ------=========== чекбокс===========--- */
-  /* content: url(../images/catalog-images/tick.svg); */
-  
 
+
+/* ------=========== чекбокс===========--- */ 
+  
 .control {
   position: relative;
   display: block;
@@ -903,20 +903,21 @@ width: 100%;
   border-radius: 4px;
   background-color: #FFFFFF;
 }
-.control:hover .control-mark {  
+.control-input[type="checkbox"]:hover +.control-mark {  
   opacity: 0.6;
 }
-.control:focus .control-mark {
+.control-input[type="checkbox"]:focus +.control-mark {  
   opacity: 0.6;
-  outline: 3px solid #83B3D3;
-}
-.control:active .control-mark {
-  opacity: 0.3;
 }
 
-/* .control-input:disabled + .control-mark {
-  border-color: #242424;
-} */
+.control-input[type="checkbox"]:active + .control-mark {
+  opacity: 0.3;
+}
+.control-input:focus + .control-mark,
+.control-input:active + .control-mark
+ {
+  outline: 3px solid #83B3D3;
+}
 .control-label {
   line-height: 22px;
   font-weight: 400;
@@ -938,7 +939,7 @@ width: 100%;
   left: 5px;
   width: 10px;
   height: 10px;
-  background-color: #242424;
+  background-color: #3F5E72;;
   border-radius: 50%;
   content: "";
 }
@@ -958,14 +959,7 @@ width: 100%;
 /* ========================================*/
 
 
-/* .catalog-filter-item input:checked+label::before{
-  content: url(../images/catalog-images/tick.svg);
-  width: 12px;
-  height: 10px;
-}
-
-
-    
+ 
 
 
 
@@ -1017,6 +1011,69 @@ width: 100%;
 
   margin-top: 13px;
 }
+
+/*========input цены=========== */
+
+.price-box-inputs{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 0;
+  padding: 0;
+  width: 287px;
+  height: 44px;
+  /* border: 2px solid #d30c0c;
+  border-radius: 4px; */
+}
+.range-input {
+  margin: 0;
+  font-family: "PT Sans", sans-serif;
+  font-size: 18px;
+  line-height: 23px;
+  font-weight: 400;
+  color: #FFFFFF;
+  background-color: rgba(255, 255, 255, 0);
+  padding: 12px 0px 9px 17px;
+  border: 2px solid #FFFFFF;
+  width: 125px;
+}
+
+.price-min{  
+  border-radius: 4px 0 0 4px;
+}
+.price-max{  
+  border-radius: 0 4px 4px 0;
+}
+.catalog-filter-label{  
+  position: relative;
+  width: 142px;  
+}
+.catalog-filter-label::after{
+  position: absolute;
+  margin: 0;
+  content: "от";
+  top: 10px;
+  left: 115px;  
+  font-size: 18px;
+  font-family: 'PT Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 23px;  
+  color: #FFFFFF;
+  opacity: 0.3;
+}
+
+
+.catalog-filter-label:first-child::after{
+  
+}
+
+
+
+
+
+
 
 /* Range =================== ползунок*/
 .range-scale {
