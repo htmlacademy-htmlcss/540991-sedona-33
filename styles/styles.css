@@ -657,6 +657,9 @@ width: 100%;
   height: 100%;
   background: rgba(242, 242, 242, 0.8);
 }
+.modal-container-close{
+  display: none;
+}
 .modal {
   position: relative;
   margin: auto;
@@ -684,6 +687,19 @@ width: 100%;
   background-position: center;
   cursor: pointer;
 } 
+.modal-close-button:hover{
+  background: #E6E6E6;
+}
+.modal-close-button:focus{
+  background: #E6E6E6;
+  outline: 3px solid #83B3D3;  
+}
+.modal-close-button:focus + svg{
+  fill: #6C9E42;
+}
+.modal-close-button:active{}
+
+
 .modal-title {
   margin: 0;
   margin-bottom: 24px;
