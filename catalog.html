@@ -3,9 +3,7 @@
 
 <head>
     <meta charset="utf-8">
-    <title>HTML Academy: Седона</title>
-    <link rel="icon" 
-          href="favicon.ico">
+    <title>HTML Academy: Седона</title>    
     <link rel="icon" 
           type="image/png" 
           sizes="32x32" 
@@ -16,9 +14,7 @@
 
 <body>
     <div class="page-shadow-container">
-        <header class="page-header">
-            <!-- навигация -->
-            <nav class="navigation">
+        <header class="page-header"><nav class="navigation">
               <a class="header-logo-link"
                  href="index.html">
                 <img class="page-header-logo" 
@@ -40,37 +36,9 @@
                   <a class="navigation-link" 
                      href="#">Гостиницы</a>
                 </li>
-                <!----------------- Тестовые элементы меню, начало ------------------------>
-                <!-- <li class="navigation-item">
-                  <a class="navigation-link" 
-                     href="catalog.html">TEST</a>
-                </li>
-                <li class="navigation-item">
-                  <a class="navigation-link" 
-                     href="catalog.html">TEST</a>
-                </li> -->
-                <!----------------- Тестовые элементы меню, конец ------------------------>
-              </ul>
+               </ul>
               <ul class="navigation-user">
-                <!----------------- Тестовые элементы меню, начало ------------------------>
-                <!-- <li class="navigation-item">
-                  <a class="navigation-link" 
-                     href="#">T</a>
-                </li>
-                <li class="navigation-item">
-                  <a class="navigation-link" 
-                     href="#">E</a>
-                </li>
-                <li class="navigation-item">
-                  <a class="navigation-link" 
-                     href="#">S</a>
-                </li> -->
-                <!-- <li class="navigation-item">
-                  <a class="navigation-link" 
-                     href="#">T</a>
-                </li> -->
-                <!----------------- Тестовые элементы меню, конец------------------------>
-                <li class="navigation-item">
+               <li class="navigation-item">
                   <a class="navigation-link" 
                      href="#">
                      <svg class="navigation-icon"
@@ -85,7 +53,7 @@
                      <span class="visually-hidden">Поиск</span></a>
                 </li>
                 <li class="navigation-item">
-                  <a class="navigation-link" 
+                  <a class="navigation-link link-apple" 
                      href="#">
                      <svg class="navigation-icon"
                           aria-hidden="true"
@@ -96,6 +64,7 @@
                           <path fill-rule="evenodd"
                                 clip-rule="evenodd"
                                 d="M9.44 17c-.3 0-.6-.1-.8-.4-5.41-6.1-6.72-7.5-7.02-7.9A5.4 5.4 0 0 1 6.03 0c1.3 0 2.51.5 3.51 1.3a5.47 5.47 0 0 1 9.03 4.1c0 1.3-.5 2.5-1.3 3.4l-7.02 7.9c-.2.2-.4.3-.8.3ZM3.43 7.5c.3.4 3.5 4 6.11 6.9l6.22-7c.5-.5.7-1.2.7-2 0-1.8-1.5-3.3-3.3-3.3-1 0-2.01.5-2.71 1.3-.3.3-.6.4-.9.4-.3 0-.6-.2-.8-.4a3.7 3.7 0 0 0-2.72-1.3c-1.8 0-3.3 1.5-3.3 3.3-.1.9.3 1.6.7 2.1-.1 0-.1 0 0 0Z"/></svg>
+                     <span class="apple">12</span>
                      <span class="visually-hidden">Избранное</span></a>
                 </li>          
                 <li class="navigation-item">
@@ -105,10 +74,8 @@
               </ul>
             </nav>
           </header>
-        <main class="main-inner "><!--удалил временно main-container --->
-            <!-- <div class="page-inner-container"> паддинг переношу в секции -->
-                <!-- "шапка"  main-->
-                <section class="catalog-header">
+        <main class="main-inner ">
+           <section class="catalog-header">
                     <h1 class="inner-header-title">Гостиницы Седоны</h1>
                     <ul class="breadcrumbs">
                         <li class="breadcrumbs-item">
@@ -132,8 +99,7 @@
                             <a class="breadcrumbs-link"
                                href="#">Гостиницы</a>
                         </li>
-                    </ul>
-                    <!-- списки фильтров -->
+                    </ul>                  
                     <h2 class="visually-hidden">Список фильтров</h2>
                     <form class="catalog-products" 
                           action="https://echo.htmlacademy.ru/" 
@@ -170,39 +136,7 @@
                                             <span class="control-label">Wi-Fi</span>
                                     </label>                                    
                                 </li>
-        <!--     тест переполнения -->
-                                <!-- <li class="catalog-filter-item">
-                                    <input class="control-input" 
-                                           type="checkbox" 
-                                           name="Wi-Fi">
-                                    <label class="control">Wi-Fi</label>
-                                </li>
-                                <li class="catalog-filter-item">
-                                    <input class="control-input" 
-                                           type="checkbox" 
-                                           name="Wi-Fi">
-                                    <label class="control">Wi-Fi</label>
-                                </li>
-                                <li class="catalog-filter-item">
-                                    <input class="control-input" 
-                                           type="checkbox" 
-                                           name="Wi-Fi">
-                                    <label class="control">Wi-Fi</label>
-                                </li>
-                                <li class="catalog-filter-item">
-                                    <input class="control-input" 
-                                           type="checkbox" 
-                                           name="Wi-Fi">
-                                    <label class="control">Wi-Fi</label>
-                                </li>
-                                <li class="catalog-filter-item">
-                                    <input class="control-input" 
-                                           type="checkbox" 
-                                           name="Wi-Fi">
-                                    <label class="control">Wi-Fi</label>
-                                </li> -->
-         <!-- конец теста                          -->
-                            </ul>
+     </ul>
                         </fieldset>
                         <fieldset class="catalog-filter-group">
                             <legend class="catalog-filter-title">Тип жилья:</legend>
@@ -240,7 +174,6 @@
                                 </li>
                             </ul>
                         </fieldset>
-                            <!-- по цене -->
                         <fieldset class="catalog-filter-group">
                             <legend class="catalog-filter-title">Стоимость, 
                                 <span>₽</span>:</legend>
@@ -280,10 +213,7 @@
                         </div>
                     </form>
                 </section>
-                
-                <!-- каталог_карточки   -->
                 <section class="hotels-catalog">
-                    <!-- сортировка  -->
                     <div class="sorting">
                         <h2 class="visually-hidden">Сортировка</h2>
                         <p>Найдено гостиниц: 38</p>
@@ -494,8 +424,7 @@
                     <div class="divider-more"></div>
                     <a class="load-more-button" 
                        href="#">Загрузить ещё</a>
-                    <div class="divider-more"></div>        
-                    <!-- пагинация -->        
+                    <div class="divider-more"></div>
                     <div class="pagination-container">
                         <h2 class="visually-hidden">Пагинация</h2>
                         <ul class="pagination-list">
@@ -522,7 +451,6 @@
                                    href="#">10</a>
                             </li>
                         </ul>
-                        <!-- форма-гостиниц на странице  -->
                         <div class="count-container">
                             <p class="count">Гостиниц на странице:</p>                                            
                             <div class="select count-type">
@@ -536,7 +464,6 @@
                         </div> 
                     </div>           
                 </section>
-                <!-- рассылка -->
                 <section class="newsletter-catalog">
                         <h2 class="newsletter-title-catalog">Подпишитесь на рассылку</h2>
                         <p class="newsletter-description-catalog">Только полезная информация и никакого спама,<br>честное бойскаутское!</p>
@@ -552,10 +479,7 @@
                                     type="submit">
                                     <span>Подписаться</span></button>
                         </form>
-                </section>
-                
-            <!-- </div>     -->
-            
+                </section>  
         </main>
         <footer class="page-footer">
             <div class="page-footer-container">
