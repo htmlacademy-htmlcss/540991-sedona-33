@@ -648,6 +648,9 @@ width: 100%;
 .page-footer-htmlacademy-link:active {
   opacity: 30%;
 }
+
+
+
 .modal-container {
   position: fixed;
   top: 0;
@@ -658,7 +661,7 @@ width: 100%;
   background: rgba(242, 242, 242, 0.8);
 }
 .modal-container-close{
-  display: none;
+  /* display: none; */
 }
 .modal {
   position: relative;
@@ -671,38 +674,10 @@ width: 100%;
 .modal-search {
   width: 715px;
 }
-
-.modal-close-button {
-  position: absolute;
-  padding: 0;
-  top: 0;
-  right: 0;
-  width: 53px;
-  height: 53px;
-  background-color: #F2F2F2;
-  border: none;
-  border-radius: 50%;
-  background-image: url("../images/index-images/close.svg");
-  background-repeat: no-repeat;
-  background-position: center;
-  cursor: pointer;
-} 
-.modal-close-button:hover{
-  background: #E6E6E6;
-}
-.modal-close-button:focus{
-  background: #E6E6E6;
-  outline: 3px solid #83B3D3;  
-}
-.modal-close-button:focus + svg{
-  fill: #6C9E42;
-}
-.modal-close-button:active{}
-
-
 .modal-title {
   margin: 0;
-  margin-bottom: 24px;
+  margin-top: 10px;
+  /* margin-bottom: 24px; */
   font-family: "PT Sans";
   font-size: 30px;
   line-height: 40px;
@@ -710,6 +685,61 @@ width: 100%;
   color: #000000;
   text-transform: uppercase;
 }
+
+.modal-close-button {
+  position: absolute;
+  padding: 0;
+  top: 75px;
+  right: 63px;
+  width: 53px;
+  height: 53px;
+  background-color: #F2F2F2;
+  border: none;
+  border-radius: 50%;  
+  fill: #000000;
+  cursor: pointer;
+  } 
+.modal-close-button:hover{
+  background: #E6E6E6;
+}
+.modal-close-button:focus{
+  background: #E6E6E6;
+  outline: 3px solid #83B3D3;  
+  fill: rgba(0, 0, 0, 0.3);  
+}
+.modal-close-button:active{
+  outline: none;
+}
+
+
+
+.modal-search-button{ 
+  width: 420px;
+  height: 60px;
+  background-color: #83B3D3;
+  border-radius: 10px;
+  border: none;
+  Font-family: PT Sans;
+  Font-style: 700;
+  Font-size: 20px;
+  Line-height: 40px;  
+  text-Align: Center;
+  vertical-align: Center;
+  text-transform: uppercase;
+  color: #FFFFFF;
+}
+.modal-search-button:hover{
+  background-color: #68A2CA;
+}
+.modal-search-button:focus{
+  background-color: #68A2CA;
+  border: 3px solid #756257;
+}
+.modal-search-button:active{
+  background-color: #68A2CA;
+  color: rgba(255, 255, 255, 0.3);
+}
+
 
 .tooltip {
   margin-top: 4px;
@@ -773,6 +803,7 @@ width: 100%;
   margin-left: auto;
   margin-right: auto;
 }
+
 
 
 .catalog-header {
@@ -1176,7 +1207,8 @@ width: 100%;
   background-repeat: no-repeat;
   background-position: right 16px center;
   appearance: none;
-  cursor: pointer;  
+  cursor: pointer;
+  background: #FFFFFF;  
 }
 
 .card-grid-toggle{
@@ -1564,4 +1596,5 @@ p + .hotels-card-price {
   background-position: right 16px center;
   appearance: none;
   cursor: pointer;
+  background: #FFFFFF;
 }
