@@ -2,7 +2,7 @@
 
 * Студент: [Михаил Маклашин](https://up.htmlacademy.ru/htmlcss/33/user/540991).
 * Наставник: [Данила Прокопенко](https://htmlacademy.ru/profile/id324297).
-* Наставник2: [Ярослав Макаренко](https://htmlacademy.ru/profile/id234926).
+* Наставник: [Ярослав Макаренко](https://htmlacademy.ru/profile/id234926).
 
 ---
 
