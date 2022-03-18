@@ -720,7 +720,7 @@ width: 100%;
   border-radius: 10px;
   border: none;
   Font-family: PT Sans;
-  Font-style: 700;
+  font-weight: 700;
   Font-size: 20px;
   Line-height: 40px;  
   text-Align: Center;
@@ -845,7 +845,7 @@ width: 100%;
   right: -10px;
   width: 5px;
   height: 8px;
-  background-color: none;
+  background-color: rgba(255, 255, 255, 0);
   content: "";
   background-image: url("../images/catalog-images/arrow.svg");
   background-repeat: no-repeat;
@@ -990,7 +990,7 @@ width: 100%;
   justify-content: space-between;
   margin-top: 36px;
   padding: 0;
-  width: 284px;
+  width: 285px;
   height: 44px;
 }
 .range-input {
@@ -1003,15 +1003,16 @@ width: 100%;
   background-color: rgba(255, 255, 255, 0);
   padding: 12px 0px 9px 17px;
   border: 2px solid #FFFFFF;
-  width: 122px;
+  width: 124px;
 }
 
 .price-min{  
   border-radius: 4px 0 0 4px;
-  border: 2px 2px 2px 1px;
+  border-width: 2px 1px 2px 2px;
 }
 .price-max{  
   border-radius: 0 4px 4px 0;
+  border-width: 2px 2px 2px 1px;
 }
 .catalog-filter-label{  
   position: relative;
@@ -1021,8 +1022,8 @@ width: 100%;
   position: absolute;
   margin: 0;
   content: "от";
-  top: 10px;
-  left: 115px;  
+  top: 12px;
+  left: 109px;  
   font-size: 18px;
   font-family: 'PT Sans';
   font-style: normal;
