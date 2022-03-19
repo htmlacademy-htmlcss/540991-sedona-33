@@ -23,6 +23,7 @@ body {
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
+  min-width: 1280px;
   min-height: 100%;
   font-family: "PT Sans", sans-serif;
   font-size: 18px;
@@ -119,7 +120,7 @@ body {
   display: flex;
   flex-wrap: wrap;
   margin: 0; 
-  margin-left: 168px;  
+  margin-left: 170px;  
   padding: 0;  
   list-style-type: none;
   align-items: center;
@@ -452,8 +453,8 @@ width: 100%;
   text-align: center; 
   margin: 0;
   padding: 0;
-  padding-top: 20px;
-  padding-bottom: 50px;
+  padding-top: 42px;
+  padding-bottom: 54px;
   max-width: 1200px;  
 }
 .newsletter-title-catalog{
@@ -561,13 +562,14 @@ width: 100%;
 }
 .footer-social-list{
   padding: 0;
+  margin-top: 10px;
   display: flex;
   flex-wrap: wrap;
   justify-content: start;  
   list-style-type: none;
 }
 .footer-social-item { 
-  margin-right: 3px;    
+  margin-right: 4px;    
 }
 .footer-social-link{
   width: 40px;
@@ -807,9 +809,9 @@ width: 100%;
 
 
 .catalog-header {
-  margin: 0;
+  margin-top: -2px;
   padding: 0;
-  padding: 35px 72px 67px;
+  padding: 36px 72px 65px;
   color: #FFFFFF;
   background-color: #333333;
   background-image: url("../images/catalog-images/filters-background.jpg");  
@@ -836,7 +838,7 @@ width: 100%;
 }
 .breadcrumbs-item {
   position: relative;
-  margin-right: 16px;
+  margin-right: 14px;
   list-style-type: none;
 }
 .breadcrumbs-item::after {
@@ -894,7 +896,7 @@ width: 100%;
 .catalog-filter-group{
   margin: 0;
   padding: 0;
-  padding-right: 64px;
+  padding-right: 68px;
   border: none;
 }
 .catalog-filter-group:nth-child(3){ 
@@ -906,7 +908,7 @@ width: 100%;
   padding: 0;
 }
 .catalog-filter-list{
-  margin-top: 30px;
+  margin-top: 28px;
   list-style-type: none;
 }
 
@@ -914,6 +916,8 @@ width: 100%;
   margin-bottom: 13px;
 }
 .catalog-filter-title {
+  padding: 2px 0px;
+  font-family: PT Sans;
   font-size: 20px;
   line-height: 26px;
   font-weight: 700;
@@ -931,7 +935,7 @@ width: 100%;
 .control {
   position: relative;
   display: block;
-  padding-left: 36px;
+  padding-left: 40px;
 }
 
 .control-mark {
@@ -964,8 +968,8 @@ width: 100%;
 }
 .control-input[type="checkbox"]:checked + .control-mark::before{
   position: absolute;
-  top: -2px;
-  left: 4px;
+  top: -4px;
+  left: 5px;
   width: 12px;
   height: 10px;  
   content: url(../images/catalog-images/tick.svg);
@@ -988,9 +992,9 @@ width: 100%;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  margin-top: 36px;
+  margin-top: 33px;
   padding: 0;
-  width: 285px;
+  width: 283px;
   height: 44px;
 }
 .range-input {
@@ -1023,7 +1027,7 @@ width: 100%;
   margin: 0;
   content: "от";
   top: 12px;
-  left: 109px;  
+  left: 110px;  
   font-size: 18px;
   font-family: 'PT Sans';
   font-style: normal;
@@ -1092,14 +1096,14 @@ width: 100%;
 }
 .toggle-max {
   top: -8px;
-  right: -10px;
+  right: -8px;
 }
 
 .filter-button-wrapper{
   display: flex;
   flex-wrap: wrap;
-  flex-direction: column;
-  padding-top: 63px;
+  flex-direction: column;  
+  margin-top: 63px;
   align-items: center;
   text-align: center;
   cursor: pointer;
@@ -1107,7 +1111,7 @@ width: 100%;
 .filter-button{
   width: 160px;
   height: 48px;
-  margin-bottom: 10px;
+  /* margin-bottom: 10px; */
   border-radius: 4px;
   border: none;
   padding: 10px;
@@ -1136,6 +1140,7 @@ width: 100%;
 }
 
 .filter-reset{  
+  margin-top: 15px;
   border-radius: 4px;
   border: none;
   padding: 5px 10px;
@@ -1163,17 +1168,19 @@ width: 100%;
   margin: 0;
   padding: 0;
   padding-top: 144px;
-  padding: 48px 72px;
+  padding: 30px 60px;
 
 }
 
 .sorting {  
   display: flex;
   flex-wrap: wrap; 
+  margin-top: 15px;
 }
 .sorting p {
   margin: 0px;
-  margin-right: 188px;
+  padding: 5px 10px;
+  margin-right: 185px;
   font-weight: 700;
   font-size: 30px;
   line-height: 39px;
@@ -1192,7 +1199,7 @@ width: 100%;
   
 }
 .select-control{
-  width: 287px;
+  width: 284px;
   height: 48px;
   border: 2px solid #E6E6E6;
   box-sizing: border-box;
@@ -1209,7 +1216,6 @@ width: 100%;
   background-position: right 16px center;
   appearance: none;
   cursor: pointer;
-  background: #FFFFFF;  
 }
 
 .card-grid-toggle{
@@ -1315,8 +1321,8 @@ width: 100%;
 
 .hotels-list {
   margin: 0;
-  padding: 0;
-  margin-top: 48px;
+  padding: 0 12px;
+  margin-top: 52px;
   list-style-type:none ;
   display: grid;
   grid-template-columns: repeat(3, 340px);
@@ -1384,7 +1390,7 @@ p + .hotels-card-price {
   margin: 0;
   width: 133px;
   height: 37px;
-  padding: 7px;
+  padding: 9px;
   border-radius: 4px;
   font-weight: 700;
   font-size: 16px;
@@ -1413,7 +1419,7 @@ p + .hotels-card-price {
   margin-left: auto;  
   width: 140px;
   height: 37px;
-  padding: 5px;
+  padding: 9px;
   border: none;
   border-radius: 4px;
   font-weight: 700;
@@ -1460,7 +1466,7 @@ p + .hotels-card-price {
 
 .hotel-stars{
   padding: 0;
-  margin-top: 16px;  
+  margin-top: 20px;  
   list-style-type: none;
   align-items: center;  
   display: grid;
@@ -1484,14 +1490,17 @@ p + .hotels-card-price {
   font-style: normal;
   font-weight: 400;
 }
-.divider-more{
+.load-more-wrapper{
+  margin: 0 auto;
   margin-top: 34px;
-  border: 1px solid #E6E6E6;
+  width: 1055px; ;
+  border-top: 2px solid #E6E6E6;
+  border-bottom: 2px solid #E6E6E6;
 }
 .load-more-button{
   display: block;
-  margin: 0 auto;
-  margin-top: 27px; 
+  margin: 29px auto;
+  
   box-sizing: border-box;
   padding: 17px 20px;
   border-radius: 4px;
@@ -1502,10 +1511,11 @@ p + .hotels-card-price {
   font-weight: 700;
   font-size: 20px;
   line-height: 26px;
-  text-align: center;
+  text-align: center;  
   text-transform: uppercase;
-  text-decoration: none;   
-}
+  text-decoration: none; 
+}  
+ 
 
 .count-hotels{
   color: #333333;
@@ -1518,8 +1528,9 @@ p + .hotels-card-price {
 .pagination-container {
   display: flex;
   flex-wrap: wrap;
-  margin-top: 25px; 
+  margin-top: 28px; 
   background-color: #FFFFFF;
+  padding: 0 12px;
 }
 .pagination-list{
   display: flex;
@@ -1538,13 +1549,14 @@ p + .hotels-card-price {
   box-sizing: border-box;
   width: 55px;
   height: 55px;
-  padding: 14px 20px;
+  padding: 15px 10px;
   line-height: 26px;
   font-weight: 700;
   color: #ffffff;
   background-color: #83B3D3;
   text-decoration: none;
   border-radius: 4px;  
+  text-align: center;
 }
 
 .pagination-link:hover {
@@ -1577,8 +1589,8 @@ p + .hotels-card-price {
   color: #333333;
 }
 .count{
-  margin-top: 10px;
-  margin-right: 51px;
+  margin-top: 15px;
+  margin-right: 52px;
   font-family: 'PT Sans';
   font-style: normal;
   font-weight: 400;
@@ -1589,6 +1601,7 @@ p + .hotels-card-price {
 .count-control{
   width: 160px;
   height: 48px;
+  margin-top: 3px;
   padding: 5px 17px;
   border: 2px solid #E6E6E6;  
   border-radius: 4px;
@@ -1597,5 +1610,7 @@ p + .hotels-card-price {
   background-position: right 16px center;
   appearance: none;
   cursor: pointer;
-  background: #FFFFFF;
+  Font-family: PT Sans;
+  Font-size: 18px;
+  Line-height: 23px;
 }
