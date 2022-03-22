@@ -495,8 +495,7 @@ width: 100%;
   font-weight: 400;
   font-size: 18px;
   line-height: 26px;
-  color: #000000;
-  opacity: 0.6;
+  color: rgba(0, 0, 0, 0.6);  
   background-color: #F2F2F2;  
 }
 .field:hover{
@@ -509,7 +508,8 @@ width: 100%;
   
 }
 .field:invalid {
-  box-shadow: inset 0 0 0 2px #FF5757;  
+  box-shadow: inset 0 0 0 2px #FF5757; 
+  background: #FFFFFF;
 }
 
 .newsletter-button{
@@ -842,8 +842,9 @@ width: 100%;
 .count-person:active{
   fill:rgba(0, 0, 0, 0.2);
 }
-.modal-field-small{  
-  width: 44px;  
+.modal-field-small{ 
+  padding-left: 20px; 
+  width: 40px;  
   height: 50px;
   border: none;
   border-radius: 4px;
@@ -854,7 +855,7 @@ width: 100%;
   line-height: 40px;
   color: #000000;  
   background: #F2F2F2;  
-  text-align: end;
+  text-align: center;
 }
 .modal-search-button{ 
   width: 100%;
@@ -927,7 +928,7 @@ width: 100%;
   left: 50%;
   transform: translateX(-50%);  
   z-index: 1;  
-  /* display: none; */
+  display: none;
 }
 .tooltip-toggle:hover + .tooltip-text,
 .tooltip-toggle:focus + .tooltip-text {
@@ -1541,20 +1542,20 @@ p + .hotels-card-price {
   color: #FFFFFF;
   background-color: #756257;
 }
+
 .hotels-card-button-link:hover{
   background-color: #615048;
 }
+
 .hotels-card-button-link:focus{
   background: #615048;
-  border: 3px solid #83B3D3;
-  outline: none;
-  padding: 4px;
 }
+
 .hotels-card-button-link:active{
   background: #615048;
-  color: rgba(255,255,255,0.3);
-  
+  color: rgba(255,255,255,0.3);  
 }
+
 .hotels-card-button{
   margin: 0;
   margin-left: auto;  
@@ -1571,24 +1572,28 @@ p + .hotels-card-price {
   color: #FFFFFF;
   background-color: #83B3D3;
 }
+
 .hotels-card-button:hover{
   background: #68A2CA;
   border: 1px solid #756257;  
   border-radius: 4px;
 }
+
 .hotels-card-button:focus{
   background: #68A2CA;
-  border: 3px solid #756257;
-  outline: none;
+  outline: 3px solid #756257;  
 }
+
 .hotels-card-button:active{
   background: #68A2CA;
   border: 1px solid #756257;
   color: rgba(255,255,255,0.3);  
 }
+
 .green-button{
   background: #7DB54F;
 }
+
 .green-button:hover{
   background:#6C9E42;
   border:none;
