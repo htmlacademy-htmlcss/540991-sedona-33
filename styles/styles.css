@@ -531,8 +531,7 @@ width: 100%;
 .field:focus {  
   background: #E6E6E6;
   box-shadow: inset 0 0 0 3px #83B3D3;
-  outline: none;
-  
+  outline: none;  
 }
 
 .field:invalid {
@@ -703,6 +702,10 @@ width: 100%;
   width: 100%;
   height: 100%;
   background: rgba(242, 242, 242, 0.8);
+}
+
+.modal-container-close {
+  display: none;
 }
 
 .modal {
